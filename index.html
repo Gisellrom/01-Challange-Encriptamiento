@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Challange Encriptador</title>
+</head>
+<body>
+    <div class="container">
+        <section class="contenedor-cajatexto">
+            <header>
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </header>
+            <main>
+                <div>
+                    <textarea class="cajaTexto" id="cajaTexto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+                </div>
+                <div class="caja-Alert-btn">
+                    <div class="caja-alerta"> 
+                        <img src="./img/icono.png" alt="alerta">
+                        <p for="alerta">
+                            Solo letras minúsculas y sin acentos
+                        </p>
+                    </div>
+                    <div class="caja-btn">
+                        <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                    
+                    
+                </div>
+            </main>   
+        </section>
+    
+        <!-- Encriptar-Desencriptar-->
+        <section class="contenedor-resultado">
+            <aside>
+                <div>
+                    <textarea class="caja-textoEncriptado" id="textoEncriptado" cols="30" rows="6"></textarea>
+                </div>
+                <div class="caja-img">
+                    <img id="chico" src="./img/chico.png" alt="chico">
+                </div>
+                <div class="caja-mensajes">
+                    <h3 id="tituloNoEncontrado">Ningún mensaje fue encontrado</h3>
+                    <p id="parrafo">Ingresa el texto que deseees encriptar o desencriptar</p>
+                </div>
+                <div class="caja-btnCopia">
+                    <button class="btn-Copia" onclick="copiar()">Copiar</button>
+                </div>
+            </aside>
+        </section>
+    </div>
+    <!--Ingresar texto-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
